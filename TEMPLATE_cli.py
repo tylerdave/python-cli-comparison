@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 from __future__ import print_function
-"""Template for a CLI program using a different package."""
+"""Example CLI program using [package/module]."""
 
-# import argparse
+# import [package/module]
 
 
 def cli():

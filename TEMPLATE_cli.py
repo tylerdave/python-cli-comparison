@@ -7,7 +7,12 @@ from __future__ import print_function
 
 def cli():
     """CLI program entry point."""
-    pass
+    parsed_arguments = {}
+    parsed_arguments['positional'] = ''
+    parsed_arguments['optional'] = ''
+    parsed_arguments['flag'] = ''
+
+    print(parsed_arguments)
 
 if __name__ == '__main__':
     cli()

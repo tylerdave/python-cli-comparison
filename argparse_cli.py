@@ -4,8 +4,6 @@ from __future__ import print_function
 
 import argparse
 
-ARGUMENTS = {}
-
 
 def cli():
     """CLI program entry point."""
@@ -17,11 +15,12 @@ def cli():
             help='a binary flag')
     args = parser.parse_args()
 
-    ARGUMENTS['positional'] = args.positional_arg
-    ARGUMENTS['optional'] = args.optional_arg
-    ARGUMENTS['flag'] = args.flag
+    parsed_arguments = {}
+    parsed_arguments['positional'] = args.positional_arg
+    parsed_arguments['optional'] = args.optional_arg
+    parsed_arguments['flag'] = args.flag
 
-    print(ARGUMENTS)
+    print(parsed_arguments)
 
 if __name__ == '__main__':
     cli()

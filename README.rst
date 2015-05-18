@@ -21,21 +21,22 @@ Status
 
 This currently tests very basic argument parsing for the following tools:
 
-Argparse
-Click
-Docopt
+* Argparse
+* Click
+* Docopt
 
 TODOs
 -----
 
-Support more tools
-More complex argument combinations
-Test and implement:
-  Version output
-  Help output
-  User prompting
-  Input validation
-  Multi-command applications
-  File IO
-  Color output
-  Auto-completion
+* Support more tools
+* More complex argument combinations
+* Test and implement
+
+    * Version output
+    * Help output
+    * User prompting
+    * Input validation
+    * Multi-command applications
+    * File IO
+    * Color output
+    * Auto-completion

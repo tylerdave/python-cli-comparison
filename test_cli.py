@@ -2,15 +2,21 @@ import argparse_cli
 import click_cli
 import docopt_cli
 import sys
-import __builtin__
 from mock import Mock, patch
 from nose.tools import assert_equal
 from nose.plugins.skip import SkipTest
 
+try:
+    import builtins
+except ImportError:
+    import __builtin__
+    builtins = __builtin__
+
+
 class BaseCLITest(object):
     cli_module = Mock()
 
-    @patch.object(__builtin__, 'print')
+    @patch.object(builtins, 'print')
     @patch.object(sys, 'argv', ['__main__', 'pos_arg', '--optional-arg', 'optional_arg', '--flag'])
     def test_parses_all_arguments(self, mock_print):
         try:

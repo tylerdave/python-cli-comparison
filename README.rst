@@ -32,11 +32,12 @@ TODOs
 * More complex argument combinations
 * Test and implement
 
-    * Version output
-    * Help output
-    * User prompting
-    * Input validation
-    * Multi-command applications
-    * File IO
-    * Color output
-    * Auto-completion
+  * Version output
+  * Help output
+  * User prompting
+  * Input validation
+  * Multi-command applications
+  * File IO
+  * Color output
+  * Auto-completion
+
